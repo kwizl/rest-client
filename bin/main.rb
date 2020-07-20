@@ -1,4 +1,4 @@
-require "../bing.rb"
+require '../bing.rb'
 
 url = 'https://www.bing.com/search'
 query = 'microverse'

@@ -1,8 +1,8 @@
-require "rest-client"
+require 'rest-client'
 
 class Bing
-	def initialize(url, query)
-    @link = RestClient.get(url, {:params => {:q => query}})
+  def initialize(url, query)
+    @link = RestClient.get(url, { params: { q: query } })
   end
 
   def print_data
@@ -18,6 +18,6 @@ class Bing
       temp = e.split('" ')
       links << temp[0]
     end
-    links.each {|l| puts l}
+    links.each { |l| puts l }
   end
 end
